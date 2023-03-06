@@ -1,0 +1,9 @@
+WARNING: First upload 'token.php' to your website by editing
+
+USE: Visit this url your web browser
+URL: https://accounts.spotify.com/tr/authorize?response_type=code&client_id=CLIENT_ID&scope=user-read-playback-state user-read-playback-position user-library-modify user-read-email playlist-modify-private user-top-read ugc-image-upload user-follow-modify user-read-currently-playing user-library-read user-read-private playlist-modify-public playlist-read-private playlist-read-collaborative user-follow-read user-modify-playback-state user-read-recently-played&redirect_uri=REDIRECT_URL
+
+CHANGE: CLIENT_ID REDIRECT_URL 
+
+WARNING: This url gets all spotify authorizations for the refresh token
+WARNING: Uses all scopes of spotify
