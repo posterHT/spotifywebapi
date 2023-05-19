@@ -28,6 +28,7 @@ function SpGetData(ur) {
         error: function (result) { Err(result); }
     });
 }
+
 let songplayurl = '';
 function SpCurrentlyPlaying(SpPlayer) {
     try {
@@ -60,23 +61,28 @@ function Err() {
     _('errcounter').innerText = errcounter;
     setTimeout("SpGetData('player')", 800);
 }
+
 function TokenErr(){
     alert("Client error please check the client options");
 }
+
 function PlaySong() {
     //click on the album img opens the song url
     if (songplayurl != '')
         window.open(songplayurl, "_blank");//window blank
 }
+
 function SpInfoRefresh(name, artist, img, pop) {
     _('playing').innerText = name; //Song Name
     _('artist').innerText = artist; //Artist
     _('pop').innerText = '#'+pop; //Popularity
     _('song-img').src = img; //Album Image
 }
+
 function _(id) {
     return document.getElementById(id);//THIS SHORT MODE
 }
+
 function SpListQueue(data) {
     if (data["queue"].length != 0) {
         console.log(data);//DEBUG
