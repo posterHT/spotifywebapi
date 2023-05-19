@@ -1,3 +1,4 @@
+// Last up : 19.05.2023
 $(document).ready(function () {
     SpGetAccessToken();//Start function
 });
